@@ -9,3 +9,9 @@ variable "instance_count" {
   description = "Number of EC2 instances to create"
   type        = number
 }
+
+variable "target_environment" {
+  description = "Which environment to be deployed to"
+  type        = string
+  default     = "development"
+}
