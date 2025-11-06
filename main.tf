@@ -127,3 +127,8 @@ module "ec2_instances" {
     environment = var.target_environment
   }
 }
+
+module "s3-bucket-sami" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-sami/aws"
+  version = "2.0.0"
+}
