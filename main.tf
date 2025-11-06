@@ -131,4 +131,5 @@ module "ec2_instances" {
 module "s3-bucket-sami" {
   source  = "app.terraform.io/policy-as-code-training/s3-bucket-sami/aws"
   version = "2.0.1"
+  bucket_name = "s3-bucket-sami-client"
 }
